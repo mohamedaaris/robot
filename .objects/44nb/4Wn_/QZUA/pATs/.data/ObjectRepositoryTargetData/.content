@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NiQBh5-xVUydnFJZ7rWBYA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="mjl.clarivate.com/search-results" CVScreenId="29cc98ca-c852-4438-a121-8345e6c55d49" CvType="AnyWordGroup" DesignTimeRectangle="765, 737, 243, 31" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='search-results-value' idx='3' tag='DIV' /&gt;" Guid="42aadb53-d12e-4ab5-92c4-18911c518eac" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="29cc98ca-c852-4438-a121-8345e6c55d49" CvTextArea="487, 744, 228, 16" CvTextArgument="Web of Science Core Collection:" CvType="Text" DesignTimeRectangle="489, 737, 275, 31" FuzzySelectorArgument="&lt;webctrl class='search-results-title-wide-col' tag='DIV' type='' aaname=' Core Collection: ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Web of Science Core Collection:' /&gt;" Guid="ce67f27f-4d07-4339-ab11-7fe4928479c4" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c1d8672f1ca905d1ccd5308142e1e746.jpg" xmlns="">0ARrg9mnbzEuWyG9W7z9U1g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

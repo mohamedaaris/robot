@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Publisher EDICIONES UN…",
+  "Type": "Element",
+  "Id": "ysOD0XG540mmhLMjkYNtWA",
+  "Reference": "8NItBrBlgUe90J9Il3uq4Q/ysOD0XG540mmhLMjkYNtWA",
+  "ParentRef": "8NItBrBlgUe90J9Il3uq4Q/QZUAvUG0XESQOFbyZ-d-Cw",
+  "Created": "2026-08-08T14:24:47.4978317Z",
+  "Updated": "2026-08-08T14:24:47.4978317Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

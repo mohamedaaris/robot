@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable1" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd3="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable1" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd3="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -119,16 +119,17 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1213.2,3344.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1213.2,3852" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable1" Name="cfr" />
+      <Variable x:TypeArguments="x:Int32" Default="2" Name="count" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uga:ReadRangeConnections x:TypeArguments="sd:DataTable1" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Copy of 08/07/2026 21:43:24 CFR-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1c-hkW6Zbh9m1DQ40Q1OrUyDO94ZShN8N5VqbTCnshmU/edit?usp=drivesdk" ConnectionId="8f0f354f-b46f-4407-b8a3-f56bacf3510d" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="521.6,289.6" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="Browse" Range="Sheet1" ReadAs="Values" Result="[cfr]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+    <uga:ReadRangeConnections x:TypeArguments="sd:DataTable1" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Copy of 08/07/2026 21:43:24 CFR-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1c-hkW6Zbh9m1DQ40Q1OrUyDO94ZShN8N5VqbTCnshmU/edit?usp=drivesdk" ConnectionId="8f0f354f-b46f-4407-b8a3-f56bacf3510d" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="556.8,289.6" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="Browse" Range="Sheet1" ReadAs="Values" Result="[cfr]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
       <uga:ReadRangeConnections.ColumnNames>
         <x:Array Type="x:String">
           <x:String>Sl.No</x:String>
@@ -163,14 +164,19 @@
       <uga:ReadRangeConnections.RangeMetadata>
         <ugsm:RangeMetadataSlim ColumnStart="1" RangeType="Range" />
       </uga:ReadRangeConnections.RangeMetadata>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:String x:Key="bbbffa17-1024-47ac-a79a-41b860f664d0">Share</x:String>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </uga:ReadRangeConnections>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Web of Science Master Journal List - S" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="521.6,3032" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="ecbb1de5-6f0f-47ef-a443-f8496b01c57c" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Web of Science Master Journal List - S" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="556.8,3539.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="ecbb1de5-6f0f-47ef-a443-f8496b01c57c" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,2837.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="555.2,3344.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="collection" />
             </Sequence.Variables>
@@ -179,22 +185,19 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[cfr]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="486.4,2777.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[cfr]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="521.6,3284.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd3:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd3:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484.8,2604.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                    <Sequence.Variables>
-                      <Variable x:TypeArguments="x:Int32" Default="2" Name="count" />
-                    </Sequence.Variables>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="520,3112" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If Condition="[CurrentRow(&quot;Print-ISSN&quot;).equals(&quot;&quot;)]" sap:VirtualizedContainerService.HintSize="451.2,732" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If Condition="[CurrentRow(&quot;Print-ISSN&quot;).equals(&quot;&quot;)]" sap:VirtualizedContainerService.HintSize="486.4,732" sap2010:WorkflowViewState.IdRef="If_1">
                       <If.Then>
                         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,296.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
                           <sap:WorkflowViewStateService.ViewState>
@@ -256,7 +259,7 @@
                         </Sequence>
                       </If.Else>
                     </If>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ecbb1de5-6f0f-47ef-a443-f8496b01c57c" Version="V5">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,193.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ecbb1de5-6f0f-47ef-a443-f8496b01c57c" Version="V5">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="mjl.clarivate.com/search-results" CVScreenId="2d5566ee-2519-4586-92ee-a5d8af9e54b9" ContentHash="04XzOMaoqU-NQHvfilpsuA" CvElementArea="1323, 392, 131, 55" CvTextArea="1354, 410, 62, 20" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1356, 407, 67, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='mdc-button__label' parentid='search-button' tag='SPAN' type='' aaname=' Search   ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Search' /&gt;" Guid="601a0470-1280-47ae-b598-754aed7dcf54" InformativeScreenshot="c8a2607925af397f20859a8c716ef53c.jpg" Reference="8NItBrBlgUe90J9Il3uq4Q/BuTpywgTQEmbFxm7qf_YgQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -267,37 +270,84 @@
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NCheckState DisplayName="Check App State 'Found 1 results (Page 1)'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,938.4" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="ecbb1de5-6f0f-47ef-a443-f8496b01c57c" Timeout="3" Version="V5">
+                    <uix:NCheckState DisplayName="Check App State 'Found 1 results (Page 1)'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="486.4,1445.6" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="ecbb1de5-6f0f-47ef-a443-f8496b01c57c" Timeout="3" Version="V5">
                       <uix:NCheckState.IfExists>
-                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,368" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="484.8,875.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NGetText DisplayName="Get Text 'Emerging Sources Citati…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,142.4" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="ecbb1de5-6f0f-47ef-a443-f8496b01c57c" TextString="[collection]" Version="V5">
-                            <uix:NGetText.Target>
-                              <uix:TargetAnchorable BrowserURL="mjl.clarivate.com/search-results" ContentHash="J-SrxlVa6Eiozf9CsT6iVA" DesignTimeRectangle="472, 749, 1361, 141" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='mat-mdc-card-content' css-selector='body&amp;gt;cdx-app&amp;gt;mat-sidenav-container&amp;gt;mat-sidenav-content&amp;gt;main&amp;gt;can-home-page&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;mat-sidenav-container&amp;gt;mat-sidenav-content&amp;gt;app-journal-search-results&amp;gt;div&amp;gt;div&amp;gt;mat-card&amp;gt;mat-card-content' tag='MAT-CARD-CONTENT' /&gt;" Guid="ee892e22-6172-462b-8d2a-eacade95e00c" InformativeScreenshot="555fa6d31ff717a618be06b071d156b5.jpg" Reference="8NItBrBlgUe90J9Il3uq4Q/-jw8Q2gqY0GWyqpuJ41tSg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                            </uix:NGetText.Target>
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </uix:NGetText>
-                          <Assign sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="Assign_4">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[indexValue]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(collection, "(?&lt;=Web of Science Core Collection:).*?(?=Additional Web of Science Indexes:)").Value.Trim()]</InArgument>
-                            </Assign.Value>
-                          </Assign>
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="451.2,815.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                            <TryCatch.Try>
+                              <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="449.6,368" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NGetText DisplayName="Get Text 'Emerging Sources Citati…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,142.4" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="ecbb1de5-6f0f-47ef-a443-f8496b01c57c" TextString="[collection]" Version="V5">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="mjl.clarivate.com/search-results" ContentHash="wCB2HoPXKEa_rhqaChF6Zw" DesignTimeRectangle="472, 624, 1361, 141" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='mat-mdc-card-content' css-selector='body&amp;gt;cdx-app&amp;gt;mat-sidenav-container&amp;gt;mat-sidenav-content&amp;gt;main&amp;gt;can-home-page&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;mat-sidenav-container&amp;gt;mat-sidenav-content&amp;gt;app-journal-search-results&amp;gt;div&amp;gt;div&amp;gt;mat-card&amp;gt;mat-card-content' tag='MAT-CARD-CONTENT' /&gt;" Guid="7357a86c-69f5-48f1-baab-fadfdb7eb03b" InformativeScreenshot="6f605d1b57715acd246625ec018cd174.jpg" Reference="8NItBrBlgUe90J9Il3uq4Q/-jw8Q2gqY0GWyqpuJ41tSg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                  </uix:NGetText.Target>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </uix:NGetText>
+                                <Assign sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[indexValue]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String" xml:space="preserve">[System.Text.RegularExpressions.Regex.Match(
+    collection,
+    "(?&lt;=Web of Science Core Collection:).*?(?=Additional Web of Science Indexes:|$)"
+).Value.Trim()]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </TryCatch.Try>
+                            <TryCatch.Catches>
+                              <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                <ActivityAction x:TypeArguments="s:Exception">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Catch" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[indexValue]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">["0"]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </Sequence>
+                                </ActivityAction>
+                              </Catch>
+                            </TryCatch.Catches>
+                            <TryCatch.Finally>
+                              <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </TryCatch.Finally>
+                          </TryCatch>
                         </Sequence>
                       </uix:NCheckState.IfExists>
                       <uix:NCheckState.IfNotExists>
-                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="484.8,225.6" sap2010:WorkflowViewState.IdRef="Sequence_15">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -323,8 +373,8 @@
                         </uix:TargetAnchorable>
                       </uix:NCheckState.Target>
                     </uix:NCheckState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[indexValue]" />
-                    <uga:WriteCellConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Copy of 08/07/2026 21:43:24 CFR-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1c-hkW6Zbh9m1DQ40Q1OrUyDO94ZShN8N5VqbTCnshmU/edit?usp=drivesdk" Cell="[&quot;H&quot;+count.toString]" ConnectionId="8f0f354f-b46f-4407-b8a3-f56bacf3510d" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="451.2,340.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_1" ItemSelectionMode="Browse" RangeLocation="Sheet1" UseConnectionService="True" WhatToWrite="[indexValue]">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[indexValue]" />
+                    <uga:WriteCellConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Copy of 08/07/2026 21:43:24 CFR-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1c-hkW6Zbh9m1DQ40Q1OrUyDO94ZShN8N5VqbTCnshmU/edit?usp=drivesdk" Cell="[&quot;H&quot;+count.toString]" ConnectionId="8f0f354f-b46f-4407-b8a3-f56bacf3510d" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="486.4,340.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_1" ItemSelectionMode="Browse" RangeLocation="Sheet1" UseConnectionService="True" WhatToWrite="[indexValue]">
                       <uga:WriteCellConnections.FileIdBackup>
                         <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="Browse">
                           <usau:BackupSlot.BackupValues>
@@ -345,7 +395,7 @@
                         </ugam:DriveItemArgument>
                       </uga:WriteCellConnections.Item>
                     </uga:WriteCellConnections>
-                    <Assign sap:VirtualizedContainerService.HintSize="451.2,165.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign sap:VirtualizedContainerService.HintSize="486.4,165.6" sap2010:WorkflowViewState.IdRef="Assign_1">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
                       </Assign.To>

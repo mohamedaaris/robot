@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ZXAfbKhufEqthmnWgaTBkw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="mjl.clarivate.com/search-results" DesignTimeRectangle="469, 552, 1365, 111" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='mat-mdc-card-content' css-selector='body&amp;gt;cdx-app&amp;gt;mat-sidenav-container&amp;gt;mat-sidenav-content&amp;gt;main&amp;gt;can-home-page&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;mat-sidenav-container&amp;gt;mat-sidenav-content&amp;gt;app-journal-search-results&amp;gt;div&amp;gt;div&amp;gt;mat-card&amp;gt;mat-card-content' tag='MAT-CARD-CONTENT' /&gt;" Guid="1da4a33c-54fe-4817-a5a4-7548e6518bb9" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="6dcf51b6d0ab6b0c5397c571571f3f7c.jpg" xmlns="">0D1icm8FmSkioruHwFUI5zw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
