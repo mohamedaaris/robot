@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable1" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd3="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable1" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd3="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -54,6 +54,7 @@
       <x:String>UiPath.DataTableUtilities</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
       <x:String>System.Numerics</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -116,7 +117,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="897.2,3329.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1177.2,3463.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable1" Name="cfr" />
     </Sequence.Variables>
@@ -125,7 +126,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uga:ReadRangeConnections x:TypeArguments="sd:DataTable1" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Copy of 08/07/2026 21:43:24 CFR-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1c-hkW6Zbh9m1DQ40Q1OrUyDO94ZShN8N5VqbTCnshmU/edit?usp=drivesdk" ConnectionId="8f0f354f-b46f-4407-b8a3-f56bacf3510d" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="556.8,289.6" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="Browse" Range="Sheet1" ReadAs="Values" Result="[cfr]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+    <uga:ReadRangeConnections x:TypeArguments="sd:DataTable1" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Copy of 08/07/2026 21:43:24 CFR-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1c-hkW6Zbh9m1DQ40Q1OrUyDO94ZShN8N5VqbTCnshmU/edit?usp=drivesdk" ConnectionId="8f0f354f-b46f-4407-b8a3-f56bacf3510d" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="521.6,289.6" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="Browse" Range="Sheet1" ReadAs="Values" Result="[cfr]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
       <uga:ReadRangeConnections.ColumnNames>
         <x:Array Type="x:String">
           <x:String>Sl.No</x:String>
@@ -161,13 +162,13 @@
         <ugsm:RangeMetadataSlim ColumnStart="1" RangeType="Range" />
       </uga:ReadRangeConnections.RangeMetadata>
     </uga:ReadRangeConnections>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Web of Science Master Journal List - S" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="556.8,3016.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="ecbb1de5-6f0f-47ef-a443-f8496b01c57c" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Web of Science Master Journal List - S" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="521.6,3150.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="ecbb1de5-6f0f-47ef-a443-f8496b01c57c" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="555.2,2822.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,2956" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="collection" />
             </Sequence.Variables>
@@ -176,13 +177,13 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[cfr]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="521.6,2762.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[cfr]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="486.4,2896" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd3:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd3:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="520,2589.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484.8,2723.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:Int32" Default="2" Name="count" />
                     </Sequence.Variables>
@@ -191,15 +192,15 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If Condition="[CurrentRow(&quot;Print-ISSN&quot;).equals(&quot;&quot;)]" sap:VirtualizedContainerService.HintSize="486.4,1059.2" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If Condition="[CurrentRow(&quot;Print-ISSN&quot;).equals(&quot;&quot;)]" sap:VirtualizedContainerService.HintSize="451.2,732" sap2010:WorkflowViewState.IdRef="If_1">
                       <If.Then>
-                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484.8,296.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,296.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Refine Your Search Resu…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,236.8" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="ecbb1de5-6f0f-47ef-a443-f8496b01c57c" Text="[CurrentRow(&quot;E-ISSN&quot;).toString]" Version="V5">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Refine Your Search Resu…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,236.8" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="ecbb1de5-6f0f-47ef-a443-f8496b01c57c" Text="[CurrentRow(&quot;E-ISSN&quot;).toString]" Version="V5">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="mjl.clarivate.com/search-results" CVScreenId="5142bf12-bc61-4d1a-940c-ba75f90672fd" ContentHash="bD6_7KYFM0-XywjM5kqmVg" CvElementArea="467, 385, 846, 73" CvType="InputBox" DesignTimeRectangle="489, 407, 805, 27" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='search-box' tag='INPUT' type='text' class='mat-mdc-input-element ng-tns-c1205077789-23 ng-valid mat-mdc-form-field-input-control mdc-text-field__input cdk-text-field-autofill-monitored ng-pristine ng-touched' placeholder='Search Journal, ISSN or title word...' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="73d55ac4-2239-4120-b97e-296565ba175e" InformativeScreenshot="90ccb80101c93bffbc10f0b1d27384b6.jpg" Reference="8NItBrBlgUe90J9Il3uq4Q/prWjN9PGvkSj_0Fx7EDY2g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -223,60 +224,37 @@
                         </Sequence>
                       </If.Then>
                       <If.Else>
-                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="484.8,624" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,296.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:IfElseIfV2 Condition="[CurrentRow(&quot;E-ISSN&quot;).equals(&quot;&quot;)]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="451.2,564" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
-                            <ui:IfElseIfV2.Else>
-                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                              </Sequence>
-                            </ui:IfElseIfV2.Else>
-                            <ui:IfElseIfV2.ElseIfs>
-                              <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True" />
-                            </ui:IfElseIfV2.ElseIfs>
-                            <ui:IfElseIfV2.Then>
-                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,296.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Refine Your Search Resu…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,236.8" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="ecbb1de5-6f0f-47ef-a443-f8496b01c57c" Text="[CurrentRow(&quot;Print-ISSN&quot;).toString]" Version="V5">
-                                  <uix:NTypeInto.Target>
-                                    <uix:TargetAnchorable BrowserURL="mjl.clarivate.com/search-results" CVScreenId="5142bf12-bc61-4d1a-940c-ba75f90672fd" ContentHash="bD6_7KYFM0-XywjM5kqmVg" CvElementArea="467, 385, 846, 73" CvType="InputBox" DesignTimeRectangle="489, 407, 805, 27" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='search-box' tag='INPUT' type='text' class='mat-mdc-input-element ng-tns-c1205077789-23 ng-valid mat-mdc-form-field-input-control mdc-text-field__input cdk-text-field-autofill-monitored ng-pristine ng-touched' placeholder='Search Journal, ISSN or title word...' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="73d55ac4-2239-4120-b97e-296565ba175e" InformativeScreenshot="90ccb80101c93bffbc10f0b1d27384b6.jpg" Reference="8NItBrBlgUe90J9Il3uq4Q/prWjN9PGvkSj_0Fx7EDY2g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
-                                      <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                          <uix:Target CVScreenId="5142bf12-bc61-4d1a-940c-ba75f90672fd" CvTextArea="467, 331, 372, 28" CvTextArgument="Refine Your Search Results" CvType="Text" DesignTimeRectangle="469, 325, 1359, 42" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='ng-star-inserted' aaname='Refine Your Search Results' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Refine Your Search Results' /&gt;" Guid="a5bc40e2-7264-47f9-b019-9ae3b41564b1" SearchSteps="FuzzySelector, CV" />
-                                        </scg:List>
-                                      </uix:TargetAnchorable.Anchors>
-                                    </uix:TargetAnchorable>
-                                  </uix:NTypeInto.Target>
-                                  <uix:NTypeInto.VerifyOptions>
-                                    <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
-                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                        <InArgument x:TypeArguments="x:Boolean" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
-                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                        <InArgument x:TypeArguments="x:Double" />
-                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                    </uix:VerifyExecutionTypeIntoOptions>
-                                  </uix:NTypeInto.VerifyOptions>
-                                </uix:NTypeInto>
-                              </Sequence>
-                            </ui:IfElseIfV2.Then>
-                          </ui:IfElseIfV2>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Refine Your Search Resu…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,236.8" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="ecbb1de5-6f0f-47ef-a443-f8496b01c57c" Text="[CurrentRow(&quot;Print-ISSN&quot;).toString]" Version="V5">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="mjl.clarivate.com/search-results" CVScreenId="5142bf12-bc61-4d1a-940c-ba75f90672fd" ContentHash="bD6_7KYFM0-XywjM5kqmVg" CvElementArea="467, 385, 846, 73" CvType="InputBox" DesignTimeRectangle="489, 407, 805, 27" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='search-box' tag='INPUT' type='text' class='mat-mdc-input-element ng-tns-c1205077789-23 ng-valid mat-mdc-form-field-input-control mdc-text-field__input cdk-text-field-autofill-monitored ng-pristine ng-touched' placeholder='Search Journal, ISSN or title word...' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="73d55ac4-2239-4120-b97e-296565ba175e" InformativeScreenshot="90ccb80101c93bffbc10f0b1d27384b6.jpg" Reference="8NItBrBlgUe90J9Il3uq4Q/prWjN9PGvkSj_0Fx7EDY2g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="5142bf12-bc61-4d1a-940c-ba75f90672fd" CvTextArea="467, 331, 372, 28" CvTextArgument="Refine Your Search Results" CvType="Text" DesignTimeRectangle="469, 325, 1359, 42" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='ng-star-inserted' aaname='Refine Your Search Results' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Refine Your Search Results' /&gt;" Guid="a5bc40e2-7264-47f9-b019-9ae3b41564b1" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                            <uix:NTypeInto.VerifyOptions>
+                              <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              </uix:VerifyExecutionTypeIntoOptions>
+                            </uix:NTypeInto.VerifyOptions>
+                          </uix:NTypeInto>
                         </Sequence>
                       </If.Else>
                     </If>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,193.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ecbb1de5-6f0f-47ef-a443-f8496b01c57c" Version="V5">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ecbb1de5-6f0f-47ef-a443-f8496b01c57c" Version="V5">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="mjl.clarivate.com/search-results" CVScreenId="2d5566ee-2519-4586-92ee-a5d8af9e54b9" ContentHash="04XzOMaoqU-NQHvfilpsuA" CvElementArea="1323, 392, 131, 55" CvTextArea="1354, 410, 62, 20" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1356, 407, 67, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='mdc-button__label' parentid='search-button' tag='SPAN' type='' aaname=' Search   ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Search' /&gt;" Guid="601a0470-1280-47ae-b598-754aed7dcf54" InformativeScreenshot="c8a2607925af397f20859a8c716ef53c.jpg" Reference="8NItBrBlgUe90J9Il3uq4Q/BuTpywgTQEmbFxm7qf_YgQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -287,24 +265,74 @@
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NGetText DisplayName="Get Text 'Emerging Sources Citati…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,142.4" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="ecbb1de5-6f0f-47ef-a443-f8496b01c57c" TextString="[collection]" Version="V5">
-                      <uix:NGetText.Target>
-                        <uix:TargetAnchorable BrowserURL="mjl.clarivate.com/search-results" CVScreenId="1097f220-5328-4563-8c8e-97007bdf19cf" ContentHash="-t-ga6Lwu0C-oSmrZxqybQ" CvType="AnyWordGroup" DesignTimeRectangle="762, 868, 247, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='search-results-value' type='' tag='DIV' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="ae0cb30e-0041-408a-ac10-68305c3b5101" InformativeScreenshot="a48b4d026d0a7935360481cb00334251.jpg" Reference="8NItBrBlgUe90J9Il3uq4Q/-jw8Q2gqY0GWyqpuJ41tSg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CVScreenId="1097f220-5328-4563-8c8e-97007bdf19cf" CvTextArea="487, 869, 228, 17" CvTextArgument="Web of Science Core Collection:" CvType="Text" DesignTimeRectangle="489, 863, 275, 30" FuzzySelectorArgument="&lt;webctrl class='search-results-title-wide-col' tag='DIV' type='' aaname=' Core Collection: ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Web of Science Core Collection:' /&gt;" Guid="0a730cad-2ceb-4f98-9665-ca3ea0f46539" SearchSteps="FuzzySelector, CV" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
-                      </uix:NGetText.Target>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uix:NGetText>
-                    <If Condition="[collection.equals(&quot;&quot;)]" sap:VirtualizedContainerService.HintSize="486.4,453.6" sap2010:WorkflowViewState.IdRef="If_3">
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="451.2,603.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                      <TryCatch.Try>
+                        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="449.6,193.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NGetText DisplayName="Get Text 'Emerging Sources Citati…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,133.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="ecbb1de5-6f0f-47ef-a443-f8496b01c57c" TextString="[collection]" Version="V5">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="mjl.clarivate.com/search-results" CVScreenId="1097f220-5328-4563-8c8e-97007bdf19cf" ContentHash="-t-ga6Lwu0C-oSmrZxqybQ" CvType="AnyWordGroup" DesignTimeRectangle="762, 868, 247, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='search-results-value' type='' tag='DIV' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="ae0cb30e-0041-408a-ac10-68305c3b5101" InformativeScreenshot="a48b4d026d0a7935360481cb00334251.jpg" Reference="8NItBrBlgUe90J9Il3uq4Q/-jw8Q2gqY0GWyqpuJ41tSg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="1097f220-5328-4563-8c8e-97007bdf19cf" CvTextArea="487, 869, 228, 17" CvTextArgument="Web of Science Core Collection:" CvType="Text" DesignTimeRectangle="489, 863, 275, 30" FuzzySelectorArgument="&lt;webctrl class='search-results-title-wide-col' tag='DIV' type='' aaname=' Core Collection: ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Web of Science Core Collection:' /&gt;" Guid="0a730cad-2ceb-4f98-9665-ca3ea0f46539" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NGetText>
+                        </Sequence>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Catch" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </ActivityAction>
+                        </Catch>
+                        <Catch x:TypeArguments="s:ArgumentException" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                          <ActivityAction x:TypeArguments="s:ArgumentException">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:ArgumentException" Name="exception" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Catch" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                      <TryCatch.Finally>
+                        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </TryCatch.Finally>
+                    </TryCatch>
+                    <If Condition="[collection is Nothing]" sap:VirtualizedContainerService.HintSize="451.2,453.6" sap2010:WorkflowViewState.IdRef="If_3">
                       <If.Then>
                         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
                           <sap:WorkflowViewStateService.ViewState>
@@ -333,8 +361,8 @@
                         </Sequence>
                       </If.Else>
                     </If>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[collection]" />
-                    <uga:WriteCellConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Copy of 08/07/2026 21:43:24 CFR-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1c-hkW6Zbh9m1DQ40Q1OrUyDO94ZShN8N5VqbTCnshmU/edit?usp=drivesdk" Cell="[&quot;H&quot;+count.toString]" ConnectionId="8f0f354f-b46f-4407-b8a3-f56bacf3510d" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="486.4,340.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_1" ItemSelectionMode="Browse" RangeLocation="Sheet1" UseConnectionService="True" WhatToWrite="[collection]">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[collection]" />
+                    <uga:WriteCellConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Copy of 08/07/2026 21:43:24 CFR-Data" BrowserItemId="https://docs.google.com/spreadsheets/d/1c-hkW6Zbh9m1DQ40Q1OrUyDO94ZShN8N5VqbTCnshmU/edit?usp=drivesdk" Cell="[&quot;H&quot;+count.toString]" ConnectionId="8f0f354f-b46f-4407-b8a3-f56bacf3510d" DisplayName="Write Cell" HideCell="False" sap:VirtualizedContainerService.HintSize="451.2,340.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_1" ItemSelectionMode="Browse" RangeLocation="Sheet1" UseConnectionService="True" WhatToWrite="[collection]">
                       <uga:WriteCellConnections.FileIdBackup>
                         <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="Browse">
                           <usau:BackupSlot.BackupValues>
@@ -355,7 +383,7 @@
                         </ugam:DriveItemArgument>
                       </uga:WriteCellConnections.Item>
                     </uga:WriteCellConnections>
-                    <Assign sap:VirtualizedContainerService.HintSize="486.4,165.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign sap:VirtualizedContainerService.HintSize="451.2,165.6" sap2010:WorkflowViewState.IdRef="Assign_1">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
                       </Assign.To>
