@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Emerging Sources Citati…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "-jw8Q2gqY0GWyqpuJ41tSg",
+  "Reference": "8NItBrBlgUe90J9Il3uq4Q/-jw8Q2gqY0GWyqpuJ41tSg",
+  "ParentRef": "8NItBrBlgUe90J9Il3uq4Q/QZUAvUG0XESQOFbyZ-d-Cw",
+  "Created": "2026-08-08T05:34:41.3789464Z",
+  "Updated": "2026-08-08T05:34:41.3789464Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

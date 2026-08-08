@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="bD6_7KYFM0-XywjM5kqmVg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="mjl.clarivate.com/search-results" CVScreenId="5142bf12-bc61-4d1a-940c-ba75f90672fd" CvElementArea="467, 385, 846, 73" CvType="InputBox" DesignTimeRectangle="489, 407, 805, 27" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='search-box' tag='INPUT' type='text' class='mat-mdc-input-element ng-tns-c1205077789-23 ng-valid mat-mdc-form-field-input-control mdc-text-field__input cdk-text-field-autofill-monitored ng-pristine ng-touched' placeholder='Search Journal, ISSN or title word...' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="73d55ac4-2239-4120-b97e-296565ba175e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5142bf12-bc61-4d1a-940c-ba75f90672fd" CvTextArea="467, 331, 372, 28" CvTextArgument="Refine Your Search Results" CvType="Text" DesignTimeRectangle="469, 325, 1359, 42" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='ng-star-inserted' aaname='Refine Your Search Results' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Refine Your Search Results' /&gt;" Guid="a5bc40e2-7264-47f9-b019-9ae3b41564b1" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="90ccb80101c93bffbc10f0b1d27384b6.jpg" xmlns="">0EhpWPjvYq0-ryhYt5su2Nw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

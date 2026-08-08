@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Web of Science Master Journal List - Search",
+  "Type": "App",
+  "Id": "44nbceh7J0Kmh8qe2CMO8w",
+  "Reference": "8NItBrBlgUe90J9Il3uq4Q/44nbceh7J0Kmh8qe2CMO8w",
+  "Created": "2026-08-08T05:23:13.1341276Z",
+  "Updated": "2026-08-08T05:23:13.1341276Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.7.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

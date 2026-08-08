@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="04XzOMaoqU-NQHvfilpsuA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="mjl.clarivate.com/search-results" CVScreenId="2d5566ee-2519-4586-92ee-a5d8af9e54b9" CvElementArea="1323, 392, 131, 55" CvTextArea="1354, 410, 62, 20" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1356, 407, 67, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='mdc-button__label' parentid='search-button' tag='SPAN' type='' aaname=' Search   ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Search' /&gt;" Guid="601a0470-1280-47ae-b598-754aed7dcf54" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2d5566ee-2519-4586-92ee-a5d8af9e54b9" CvElementArea="1323, 392, 131, 55" CvTextArea="1354, 410, 62, 20" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1326, 394, 127, 50" FullSelectorArgument="&lt;webctrl parentid='search-button' tag='SPAN' /&gt;" Guid="640a537e-e01e-428f-b7db-a0ee07e812ac" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c8a2607925af397f20859a8c716ef53c.jpg" xmlns="">05mbDKVbaIEKy0xzc_P3pRQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PPFAUy5m0EilWkTSehatXA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="mjl.clarivate.com/search-results" CVScreenId="2cb72164-96d9-4ddc-b959-37b94258f156" CvElementArea="467, 386, 846, 73" CvType="InputBox" DesignTimeRectangle="489, 407, 805, 27" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='search-box' tag='INPUT' /&gt;" Guid="009b78a3-2571-4e08-acad-b81f6b6c9527" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2cb72164-96d9-4ddc-b959-37b94258f156" CvTextArea="467, 331, 371, 28" CvTextArgument="Refine Your Search Results" CvType="Text" DesignTimeRectangle="469, 325, 1359, 42" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='ng-star-inserted' aaname='Refine Your Search Results' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Refine Your Search Results' /&gt;" Guid="6180fa62-15fb-4911-95e3-f7b29b338de2" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="cb0a53ada78a3e24a35db01da46f7db5.jpg" xmlns="">0_4ikqICbCUey4nnxr2DXtA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

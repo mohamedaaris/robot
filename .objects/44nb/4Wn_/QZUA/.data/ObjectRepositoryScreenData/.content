@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="buAXYsLbCUWhnqtiA52Dug" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHeSURBVDhPfZLNS1VhEMaf252SLn70oc1trq4Cof8gchVUtCnoC6F2EjqBcVvVOqjQRf+Bm4Kgz0UbF27Ui41EEAVFFERupBZlIQmB2sTQe+LldOmBB857Zp7feWc4QEnKXvissn9U9jvKfkzZa0Xtv0pNvcreUnZP/q7sj5X9kLJTO0gVwHYANQBbxnjzgrJvZIDCK8o+oex95ds0AbQAzAO4f7TnYfMi+21lf6/s6yXIprJPK/tgAegCMAcgTuE3APb6kFeUfUDZx5T9eQrmoFllbwRgH4APGeBBGilfaF3Zb6RdFID52FX0HQDwJQNM/h0sKUFieeeV/ZOyryn76WKEwwBWM8DVMiB0qcsBr0PrP4dH+9cmmh3eMd7dHnClHA71vgZOnBpBY6F2ZmCu5/rOd9jW9+pP7SCArxngZjksRuGqGA2L0bIY/RCjk/E+NAhgKQPcjX8hC4b3iNE1MVoRI0+eFaPd0bcDwNMM8DJufM67K2IkYjQiRotitJGFwy0x6g9AJc29CMAAPNo1WR2XZzQlRm/FaL0U/CVGM2K0vxghFE+dySQLdDk15sHwNzG6JUb1Yrx/lAoNMXqRBVfF6IkYHRGjrW2DhbLFjYrRZzG6J0bHxaiz3Vd/A/NnGEIQlokPAAAAAElFTkSuQmCC" Selector="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" Url="https://mjl.clarivate.com/search-results" Version="V3">
+      <imageRef attrName="InformativeScreenshot" originalValue="a28d3c1e44646009c842d8a64e31cde9.jpg" xmlns="">0n52gvL6ZY0-RiN83wsGnhw</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>
