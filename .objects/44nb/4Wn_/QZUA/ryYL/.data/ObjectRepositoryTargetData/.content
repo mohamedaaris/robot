@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="rDlWq6xRO0mmf3S6IZK50w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="mjl.clarivate.com/search-results" CVScreenId="c4ce921a-f7e2-459f-af9d-a21c80051f88" CvTextArea="471, 672, 175, 20" CvTextArgument="Found 1 results (Page 1)" CvType="Text" DesignTimeRectangle="473, 660, 225, 33" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='top-column' tag='DIV' /&gt;" Guid="e7f8ec77-16a9-422a-a5f4-4427ce797c62" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Web of Science Master Journal List - Search' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c4ce921a-f7e2-459f-af9d-a21c80051f88" CvTextArea="471, 619, 160, 23" CvTextArgument="Search Results" CvType="Text" DesignTimeRectangle="473, 614, 1358, 33" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname=' Search Results ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Search Results' /&gt;" Guid="e75fade8-b29f-4e82-a893-302f0d84795c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5c41a6c0a01c20d1ef10031d9032afcc.jpg" xmlns="">0s0N4iuLmQUaqVNMqWRYp7g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
